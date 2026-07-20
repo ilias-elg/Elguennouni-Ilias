@@ -1,0 +1,125 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english,french]{babel}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small\textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Ilias Elguennouni} \\ \vspace{5pt}
+    \small 06 70 86 21 78 $|$ \href{mailto:iliaselguennounits@gmail.com}{\underline{iliaselguennounits@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/elguennouni}{\underline{linkedin.com/in/elguennouni}} \\ \vspace{5pt}
+    \textbf{Développeur Full-Stack $|$ Community Manager $|$ Marketing Digital} \\ \vspace{3pt}
+    \textit{Allier ma passion pour l'ingénierie et l'humain pour bâtir des solutions logicielles et des communautés durables.}
+\end{center}
+
+\section{Formation}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {École Supérieure d'Ingénierie en Sciences Appliquées (ESISA)}{Fès, Maroc}
+      {Cycle d'Ingénieur en Informatique -- Deuxième année validée avec succès}{2022 -- Présent}
+      \vspace{4pt}
+      
+      {\small Je viens de clôturer ma deuxième année d'études supérieures au sein de l'ESISA, où j'ai pu consolider de solides bases en ingénierie logicielle, algorithmique avancée et architecture des systèmes. Cette formation rigoureuse m'a appris à aborder des problématiques techniques complexes avec méthode et à concevoir des solutions fiables.}
+  \resumeSubHeadingListEnd
+
+\section{Expérience Professionnelle}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Community Manager et Gestionnaire de Réseaux Sociaux}{2024 -- Présent}
+      {Diverses Communautés en Ligne $|$ Indépendant}{}
+      \vspace{4pt}
+      
+      {\small J'ai eu l'opportunité de gérer et de modérer plusieurs serveurs Discord très actifs, regroupant au total plus de vingt mille membres. En travaillant en étroite collaboration avec l'influenceur thusspokeayman, j'ai veillé à maintenir une image de marque cohérente tout en appliquant des stratégies d'audience réfléchies. J'ai également pris en charge l'organisation de divers événements interactifs pour stimuler l'engagement de la communauté, tout en gérant un calendrier éditorial sur plusieurs plateformes.}
+      
+    \resumeSubheading
+      {Spécialiste en Marketing Digital et Publicité}{2023 -- 2024}
+      {Entreprises Locales $|$ Indépendant}{}
+      \vspace{4pt}
+      
+      {\small J'ai accompagné diverses entreprises locales dans l'élaboration de leurs campagnes de communication sur les réseaux sociaux. De la configuration au lancement de publicités ciblées, j'ai optimisé de façon continue les performances afin d'améliorer la visibilité de mes clients. Ce travail de fond a directement contribué à fidéliser leur audience et à générer une véritable croissance organique autour de leurs pages.}
+  \resumeSubHeadingListEnd
+
+\section{Projets Techniques}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {Moteur d'Échecs en C++ $|$ \emph{C++, Qt Framework, SQL}}{}
+          \vspace{4pt}
+          
+          {\small J'ai entièrement conçu et programmé un jeu d'échecs en C++ doté d'une interface graphique soignée réalisée avec Qt. Le coeur de l'application repose sur une intelligence artificielle qui utilise l'algorithme Minimax pour anticiper les coups, offrant ainsi un véritable défi au joueur. J'y ai également intégré une base de données SQL pour sauvegarder la progression, le tout enrichi d'effets sonores pour rendre l'expérience plus immersive.}
+          
+      \resumeProjectHeading
+          {IA de Jeu de Dames Marocain $|$ \emph{Python, IA, MySQL}}{}
+          \vspace{4pt}
+          
+          {\small Ce projet met à l'honneur les spécificités des dames marocaines à travers un jeu interactif développé en Python. Afin de rendre les parties captivantes, j'ai mis au point une intelligence artificielle performante capable d'analyser le plateau de jeu en profondeur. Une base de données MySQL tourne en arrière-plan pour stocker l'historique des matchs et les statistiques de chaque joueur, rendant ainsi l'expérience plus complète.}
+          
+      \resumeProjectHeading
+          {Nexus Listings -- Plateforme de Petites Annonces $|$ \emph{Full-Stack Web, SQL}}{}
+          \vspace{4pt}
+          
+          {\small J'ai développé de A à Z une plateforme web dédiée aux petites annonces locales. Les utilisateurs peuvent facilement y naviguer, rechercher des offres filtrées par catégorie et échanger en toute sécurité grâce à une messagerie instantanée intégrée. J'ai pris soin de structurer l'architecture du projet pour garantir la fluidité des interactions et la sécurité des données des utilisateurs.}
+    \resumeSubHeadingListEnd
+
+\section{Compétences}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Langages et Outils :} C++, Python, SQL, Développement Web Full-Stack. \\ \vspace{2pt}
+     \textbf{Domaines Techniques :} Ingénierie logicielle, algorithmique avancée, intelligence artificielle (Minimax), conception d'interfaces. \\ \vspace{2pt}
+     \textbf{Marketing et Communication :} Gestion de grandes communautés en ligne, stratégie de contenu, publicité digitale, communication proactive. \\ \vspace{2pt}
+     \textbf{Langues :} Français courant, Anglais, Arabe.
+    }}
+ \end{itemize}
+
+\end{document}

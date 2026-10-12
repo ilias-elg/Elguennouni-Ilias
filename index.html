@@ -3,48 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ilias Elguennouni — Creative Developer</title>
-  <meta name="description" content="Ilias Elguennouni — Creative developer building high-performance interfaces and memorable digital experiences.">
+  <title>Ilias Elguennouni — Software Developer &amp; Community Builder</title>
+  <meta name="description" content="Ilias Elguennouni — software developer and community builder. C++ and Python game AI, full-stack web platforms, and online communities of 20,000+ members.">
+  <meta name="theme-color" content="#F9F8F6">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ilias Elguennouni — Software Developer &amp; Community Builder">
+  <meta property="og:description" content="C++ and Python game AI, full-stack web platforms, and online communities of 20,000+ members.">
+  <meta property="og:image" content="assets/img/avatar.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
+
+  <a href="#about" class="skip-link">Skip to content</a>
 
   <!-- ══ NAV ══ -->
   <header class="nav" id="siteNav">
     <div class="nav__inner">
-      <a href="#" class="nav__logo" id="navLogo">Ilias.</a>
+      <a href="#hero" class="nav__logo" id="navLogo">Ilias<span>.</span></a>
 
-      <nav class="nav__links" id="navLinks">
-        <a href="#work"       class="nav__link" id="nlWork">About Me</a>
-        <a href="#work"       class="nav__link" id="nlPortfolio">Portfolio</a>
-        <a href="#services"   class="nav__link" id="nlServices">Services</a>
-        <a href="#contact"    class="nav__link" id="nlBlog">Blog</a>
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#about"      class="nav__link">About</a>
+        <a href="#work"       class="nav__link">Work</a>
+        <a href="#services"   class="nav__link">Services</a>
+        <a href="#experience" class="nav__link">Experience</a>
       </nav>
 
       <div class="nav__cta-wrap">
+        <span class="nav__status"><i></i>Available for projects</span>
         <a href="#contact" class="nav__cta" id="navCta">Contact me</a>
       </div>
 
-      <button class="nav__burger" id="navBurger" aria-label="Menu">
+      <button class="nav__burger" id="navBurger" aria-label="Menu" aria-expanded="false" aria-controls="mobMenu">
         <span></span><span></span>
       </button>
     </div>
+    <div class="nav__progress" id="navProgress"></div>
   </header>
 
   <!-- Mobile Menu -->
   <div class="mob-menu" id="mobMenu">
-    <a href="#work"     class="mob-link" id="ml1">Portfolio</a>
-    <a href="#services" class="mob-link" id="ml2">Services</a>
-    <a href="#about"    class="mob-link" id="ml3">About</a>
-    <a href="#contact"  class="mob-link" id="ml4">Contact</a>
-    <a href="#contact"  class="mob-cta"  id="ml5">Book A Call →</a>
+    <a href="#about"      class="mob-link"><span>01</span>About</a>
+    <a href="#work"       class="mob-link"><span>02</span>Work</a>
+    <a href="#services"   class="mob-link"><span>03</span>Services</a>
+    <a href="#experience" class="mob-link"><span>04</span>Experience</a>
+    <a href="#contact"    class="mob-link"><span>05</span>Contact</a>
+    <a href="mailto:iliaselguennounits@gmail.com" class="mob-cta">iliaselguennounits@gmail.com →</a>
   </div>
-  <div class="mob-overlay" id="mobOverlay"></div>
 
   <main>
 
@@ -95,10 +106,10 @@
           <a href="#" class="hero__social" id="hsDribble" aria-label="Dribbble">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg>
           </a>
-          <a href="#" class="hero__social" id="hsLinkedin" aria-label="LinkedIn">
+          <a href="https://linkedin.com/in/elguennouni" target="_blank" rel="noopener" class="hero__social" id="hsLinkedin" aria-label="LinkedIn">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
           </a>
-          <a href="#" class="hero__social" id="hsGithub" aria-label="GitHub">
+          <a href="https://github.com/ilias-elg" target="_blank" rel="noopener" class="hero__social" id="hsGithub" aria-label="GitHub">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
           </a>
         </div>
@@ -106,74 +117,145 @@
 
     </section>
 
-    <!-- Animated Background Wrapper -->
-    <div class="content-wrapper">
+    <!-- ══ MARQUEE ══ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span>Software Development</span><i>✦</i>
+          <span class="alt">Community Building</span><i>✦</i>
+          <span>Game AI</span><i>✦</i>
+          <span class="alt">C++ &amp; Qt</span><i>✦</i>
+          <span>Python</span><i>✦</i>
+          <span class="alt">Full-Stack Web</span><i>✦</i>
+          <span>Digital Marketing</span><i>✦</i>
+        </div>
+        <div class="marquee__group">
+          <span>Software Development</span><i>✦</i>
+          <span class="alt">Community Building</span><i>✦</i>
+          <span>Game AI</span><i>✦</i>
+          <span class="alt">C++ &amp; Qt</span><i>✦</i>
+          <span>Python</span><i>✦</i>
+          <span class="alt">Full-Stack Web</span><i>✦</i>
+          <span>Digital Marketing</span><i>✦</i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ ABOUT ══ -->
+    <section class="about" id="about">
+      <div class="wrap">
+
+        <div class="kicker reveal"><span>01</span>About</div>
+
+        <p class="statement" id="statement">
+          I build software that thinks a few moves ahead — <em>chess engines, game AI and full-stack platforms</em> — and online communities that people actually want to stay in.
+        </p>
+
+        <div class="about__grid">
+          <div class="about__bio reveal">
+            <p>I'm a <strong>21-year-old computer engineering student</strong> at ESISA in Fès, Morocco. I like problems with clear rules and hard answers: search algorithms, game trees, data models that hold up under real use.</p>
+            <p>Alongside the code, I've spent the last few years running Discord communities of <strong>more than 20,000 members</strong> and managing social campaigns for local businesses — so I care as much about the people using a product as the logic behind it.</p>
+            <div class="about__actions">
+              <a href="resume/cv.pdf" class="btn btn--solid" download="Ilias-Elguennouni-CV.pdf">
+                Download CV
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v13m0 0l-5-5m5 5l5-5M5 21h14"/></svg>
+              </a>
+              <a href="#contact" class="btn btn--line">Get in touch</a>
+            </div>
+          </div>
+
+          <dl class="stats">
+            <div class="stat reveal">
+              <dt><span data-count="20">20</span>k+</dt>
+              <dd>Community members managed and moderated</dd>
+            </div>
+            <div class="stat reveal">
+              <dt><span data-count="3">3</span></dt>
+              <dd>End-to-end projects designed, built and shipped</dd>
+            </div>
+            <div class="stat reveal">
+              <dt><span data-count="3">3</span></dt>
+              <dd>Languages spoken — French, English, Arabic</dd>
+            </div>
+            <div class="stat reveal">
+              <dt>2023</dt>
+              <dd>Working independently with clients since</dd>
+            </div>
+          </dl>
+        </div>
+
+      </div>
+    </section>
 
     <!-- ══ WORK ══ -->
     <section class="work" id="work">
-      <div class="section-wrap">
+      <div class="wrap">
 
-        <div class="section-head fade-in">
-          <div class="section-kicker">
-            <span class="kicker-line"></span>Portfolio
+        <div class="sec-head">
+          <div>
+            <div class="kicker kicker--light reveal"><span>02</span>Selected work</div>
+            <h2 class="h2 reveal">Things I've <em>built.</em></h2>
           </div>
-          <h2 class="section-h2">Selected Work</h2>
-          <div class="work-filters">
-            <button class="wf-btn active" data-filter="all"     id="fAll">All</button>
-            <button class="wf-btn"        data-filter="web"     id="fWeb">Web Apps</button>
-            <button class="wf-btn"        data-filter="design"  id="fDesign">UI / UX</button>
-            <button class="wf-btn"        data-filter="systems" id="fSystems">Systems</button>
-          </div>
+          <p class="sec-head__note reveal">Three projects, each taken from a blank file to a working product — interface, logic and database.</p>
         </div>
 
-        <div class="projects-grid" id="projectsGrid">
+        <div class="stack">
 
-          <article class="pcard fade-in" data-category="systems" id="proj1">
-            <div class="pcard__thumb pc--green">
-              <span>CH</span>
-              <div class="pcard__hover"><button class="modal-trigger" data-project="chess">View Details ↗</button></div>
-            </div>
-            <div class="pcard__info">
-              <div class="pcard__meta">
-                <span class="pcard__cat">Desktop App</span>
-                <span class="pcard__yr">Recent</span>
+          <article class="pj pj--chess" style="--i:0">
+            <div class="pj__body">
+              <div class="pj__top">
+                <span class="pj__num">01</span>
+                <span class="pj__cat">Desktop App</span>
               </div>
-              <h3 class="pcard__title">C++ Chess Engine</h3>
-              <p class="pcard__desc">Complete chess game built with C++ and Qt, featuring a Minimax AI, background music, and a database for saves.</p>
-              <div class="pcard__tags"><span>C++</span><span>Qt</span><span>SQL</span></div>
+              <h3 class="pj__title">C++ Chess Engine</h3>
+              <p class="pj__desc">A complete chess game written in C++ with a Qt interface, a Minimax opponent that looks ahead before it moves, and a SQL database for saved games.</p>
+              <ul class="pj__tags"><li>C++</li><li>Qt</li><li>Minimax</li><li>SQL</li></ul>
+              <button class="pj__btn" type="button" data-project="chess">
+                View project
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg>
+              </button>
             </div>
+            <button class="pj__media" type="button" data-project="chess" aria-label="Open C++ Chess Engine details">
+              <img src="assets/img/chess_engine.png" alt="Chess engine interface with board, move history and AI difficulty panel" loading="lazy" width="1024" height="1024">
+            </button>
           </article>
 
-          <article class="pcard fade-in" data-category="systems" id="proj2">
-            <div class="pcard__thumb pc--navy">
-              <span>DM</span>
-              <div class="pcard__hover"><button class="modal-trigger" data-project="checkers">View Details ↗</button></div>
-            </div>
-            <div class="pcard__info">
-              <div class="pcard__meta">
-                <span class="pcard__cat">Game AI</span>
-                <span class="pcard__yr">Recent</span>
+          <article class="pj pj--checkers" style="--i:1">
+            <div class="pj__body">
+              <div class="pj__top">
+                <span class="pj__num">02</span>
+                <span class="pj__cat">Game AI</span>
               </div>
-              <h3 class="pcard__title">Moroccan Checkers AI</h3>
-              <p class="pcard__desc">Interactive Python game featuring Minimax AI with Alpha-Beta pruning, automatic rule enforcement, and a MySQL database.</p>
-              <div class="pcard__tags"><span>Python</span><span>AI</span><span>MySQL</span></div>
+              <h3 class="pj__title">Moroccan Checkers AI</h3>
+              <p class="pj__desc">Traditional Moroccan checkers in Python. Regional rules are enforced automatically, and the opponent runs Minimax with Alpha-Beta pruning across several difficulty levels.</p>
+              <ul class="pj__tags"><li>Python</li><li>Alpha-Beta</li><li>MySQL</li></ul>
+              <button class="pj__btn" type="button" data-project="checkers">
+                View project
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg>
+              </button>
             </div>
+            <button class="pj__media" type="button" data-project="checkers" aria-label="Open Moroccan Checkers AI details">
+              <img src="assets/img/moroccan_checkers.png" alt="Moroccan checkers game with board, player profiles and AI evaluation panel" loading="lazy" width="1024" height="1024">
+            </button>
           </article>
 
-          <article class="pcard fade-in" data-category="web" id="proj3">
-            <div class="pcard__thumb pc--warm">
-              <span>NL</span>
-              <div class="pcard__hover"><button class="modal-trigger" data-project="nexus">View Details ↗</button></div>
-            </div>
-            <div class="pcard__info">
-              <div class="pcard__meta">
-                <span class="pcard__cat">Web Platform</span>
-                <span class="pcard__yr">Recent</span>
+          <article class="pj pj--nexus" style="--i:2">
+            <div class="pj__body">
+              <div class="pj__top">
+                <span class="pj__num">03</span>
+                <span class="pj__cat">Web Platform</span>
               </div>
-              <h3 class="pcard__title">Nexus Listings</h3>
-              <p class="pcard__desc">A local classifieds platform allowing users to post and browse ads by category, featuring an integrated private messaging system.</p>
-              <div class="pcard__tags"><span>Full-stack</span><span>SQL</span><span>Web</span></div>
+              <h3 class="pj__title">Nexus Listings</h3>
+              <p class="pj__desc">A local classifieds platform where people post and browse ads by category, filter by location or price, and talk to each other through built-in private messaging.</p>
+              <ul class="pj__tags"><li>PHP</li><li>SQL</li><li>HTML / CSS / JS</li></ul>
+              <button class="pj__btn" type="button" data-project="nexus">
+                View project
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg>
+              </button>
             </div>
+            <button class="pj__media" type="button" data-project="nexus" aria-label="Open Nexus Listings details">
+              <img src="assets/img/nexus_listings.png" alt="Nexus Listings classifieds site with categories, featured listings and messaging" loading="lazy" width="1024" height="1024">
+            </button>
           </article>
 
         </div>
@@ -182,55 +264,58 @@
 
     <!-- ══ SERVICES ══ -->
     <section class="services" id="services">
-      <div class="section-wrap">
-        <div class="section-head fade-in">
-          <div class="section-kicker"><span class="kicker-line"></span>What I Do</div>
-          <h2 class="section-h2">Services</h2>
-        </div>
-        <div class="svc-grid">
-          <div class="svc-card fade-in" id="svc1">
-            <div class="svc-card__num">01</div>
-            <h3 class="svc-card__title">Software Development</h3>
-            <p class="svc-card__desc">Building robust applications using C++, Python, and Web technologies with a focus on problem-solving and efficiency.</p>
-          </div>
-          <div class="svc-card fade-in" id="svc2">
-            <div class="svc-card__num">02</div>
-            <h3 class="svc-card__title">Community Management</h3>
-            <p class="svc-card__desc">Growing and moderating vibrant Discord communities, with experience managing over 20,000 active members.</p>
-          </div>
-          <div class="svc-card fade-in" id="svc3">
-            <div class="svc-card__num">03</div>
-            <h3 class="svc-card__title">Social Media Marketing</h3>
-            <p class="svc-card__desc">Creating visually appealing content, managing ad campaigns, and optimizing strategies for local businesses.</p>
-          </div>
-          <div class="svc-card fade-in" id="svc4">
-            <div class="svc-card__num">04</div>
-            <h3 class="svc-card__title">Technical Troubleshooting</h3>
-            <p class="svc-card__desc">Resolving technical issues, providing user support, and applying strong analytical skills to overcome challenges.</p>
+      <div class="wrap">
+
+        <div class="sec-head">
+          <div>
+            <div class="kicker reveal"><span>03</span>What I do</div>
+            <h2 class="h2 reveal">Code, people, <em>and reach.</em></h2>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- ══ ABOUT ══ -->
-    <section class="about" id="about">
-      <div class="section-wrap about__inner">
-
-        <div class="about__left fade-in">
-          <div class="section-kicker"><span class="kicker-line"></span>About Me</div>
-          <h2 class="section-h2">Driven by Logic<br>&amp; Community.</h2>
-          <p class="about__bio">I am a <strong>21-year-old</strong> software developer and community manager. From building C++ chess engines to growing Discord communities with over <strong>20,000 members</strong>, I blend technical problem-solving with effective communication and community building.</p>
-          <a href="#contact" class="btn-dark" id="aboutCta">Work With Me →</a>
+        <div class="svc-list">
+          <div class="svc reveal">
+            <span class="svc__num">01</span>
+            <h3 class="svc__title">Software Development</h3>
+            <p class="svc__desc">Desktop and web applications in C++, Python and web technologies, built around clean logic and efficient problem-solving.</p>
+            <span class="svc__arrow" aria-hidden="true">↗</span>
+          </div>
+          <div class="svc reveal">
+            <span class="svc__num">02</span>
+            <h3 class="svc__title">Community Management</h3>
+            <p class="svc__desc">Growing and moderating Discord communities — events, moderation policy and day-to-day engagement at 20,000+ member scale.</p>
+            <span class="svc__arrow" aria-hidden="true">↗</span>
+          </div>
+          <div class="svc reveal">
+            <span class="svc__num">03</span>
+            <h3 class="svc__title">Social Media Marketing</h3>
+            <p class="svc__desc">Content, scheduling and paid campaigns on Facebook and Instagram, tuned continuously for local businesses.</p>
+            <span class="svc__arrow" aria-hidden="true">↗</span>
+          </div>
+          <div class="svc reveal">
+            <span class="svc__num">04</span>
+            <h3 class="svc__title">Technical Troubleshooting</h3>
+            <p class="svc__desc">Tracking down technical issues, supporting users, and applying an analytical approach until the problem is actually solved.</p>
+            <span class="svc__arrow" aria-hidden="true">↗</span>
+          </div>
         </div>
 
-        <div class="about__right fade-in">
-          <div class="skill-list">
-            <div class="skill"><div class="skill__head"><span>Software Fundamentals</span><span>90%</span></div><div class="skill__bar"><div class="skill__fill" data-w="90"></div></div></div>
-            <div class="skill"><div class="skill__head"><span>C++ & Python</span><span>85%</span></div><div class="skill__bar"><div class="skill__fill" data-w="85"></div></div></div>
-            <div class="skill"><div class="skill__head"><span>Community Management</span><span>95%</span></div><div class="skill__bar"><div class="skill__fill" data-w="95"></div></div></div>
-            <div class="skill"><div class="skill__head"><span>Social Media Marketing</span><span>88%</span></div><div class="skill__bar"><div class="skill__fill" data-w="88"></div></div></div>
-            <div class="skill"><div class="skill__head"><span>Problem Solving</span><span>92%</span></div><div class="skill__bar"><div class="skill__fill" data-w="92"></div></div></div>
-            <div class="skill"><div class="skill__head"><span>Communication</span><span>90%</span></div><div class="skill__bar"><div class="skill__fill" data-w="90"></div></div></div>
+        <div class="toolkit">
+          <div class="toolkit__col reveal">
+            <h4>Languages</h4>
+            <ul><li>C++</li><li>Python</li><li>SQL</li><li>JavaScript</li><li>HTML &amp; CSS</li></ul>
+          </div>
+          <div class="toolkit__col reveal">
+            <h4>Tools</h4>
+            <ul><li>Qt Framework</li><li>MySQL</li><li>Git</li><li>Tkinter / Pygame</li><li>PHP</li></ul>
+          </div>
+          <div class="toolkit__col reveal">
+            <h4>Engineering</h4>
+            <ul><li>Algorithms</li><li>Game AI (Minimax)</li><li>Object-oriented design</li><li>Interface design</li></ul>
+          </div>
+          <div class="toolkit__col reveal">
+            <h4>Communication</h4>
+            <ul><li>Community strategy</li><li>Content planning</li><li>Paid advertising</li><li>French · English · Arabic</li></ul>
           </div>
         </div>
 
@@ -239,120 +324,145 @@
 
     <!-- ══ EXPERIENCE ══ -->
     <section class="exp" id="experience">
-      <div class="section-wrap">
-        <div class="section-head fade-in">
-          <div class="section-kicker"><span class="kicker-line"></span>Experience</div>
-          <h2 class="section-h2">Work History</h2>
+      <div class="wrap exp__inner">
+
+        <div class="exp__aside">
+          <div class="kicker reveal"><span>04</span>Experience</div>
+          <h2 class="h2 h2--sm reveal">Where I've <em>been.</em></h2>
+          <p class="exp__note reveal">Engineering studies on one side, real audiences and real clients on the other.</p>
         </div>
-        <div class="exp-list">
-          <div class="exp-row fade-in" id="exp1">
-            <div class="exp-row__left">
-              <span class="exp-row__period">2024 — 2025</span>
-              <span class="exp-row__co">Various Communities</span>
+
+        <ol class="timeline">
+          <li class="tl reveal">
+            <div class="tl__meta">
+              <span class="tl__period">2024 — 2025</span>
+              <span class="tl__co">Various Communities</span>
             </div>
-            <div class="exp-row__right">
-              <h3 class="exp-row__role">Community & Social Media Manager</h3>
-              <p class="exp-row__desc">Managed and moderated Discord communities with over 20,000 active members. Collaborated directly with influencer <strong>thusspokeayman</strong> on brand consistency, audience strategy, and moderation policies. Organized interactive online events and handled content scheduling across platforms.</p>
+            <div class="tl__main">
+              <h3 class="tl__role">Community &amp; Social Media Manager</h3>
+              <p class="tl__desc">Managed and moderated Discord communities with over 20,000 active members. Collaborated directly with influencer <strong>thusspokeayman</strong> on brand consistency, audience strategy and moderation policies. Organized interactive online events and handled content scheduling across platforms.</p>
             </div>
-          </div>
-          <div class="exp-row fade-in" id="exp2">
-            <div class="exp-row__left">
-              <span class="exp-row__period">2023 — 2024</span>
-              <span class="exp-row__co">Freelance</span>
+          </li>
+          <li class="tl reveal">
+            <div class="tl__meta">
+              <span class="tl__period">2023 — 2024</span>
+              <span class="tl__co">Freelance</span>
             </div>
-            <div class="exp-row__right">
-              <h3 class="exp-row__role">Social Media Marketer & Ad Manager</h3>
-              <p class="exp-row__desc">Created and managed social media campaigns for local businesses. Set up and optimized paid ads on Facebook and Instagram, contributing to significant growth in follower counts.</p>
+            <div class="tl__main">
+              <h3 class="tl__role">Social Media Marketer &amp; Ad Manager</h3>
+              <p class="tl__desc">Created and managed social media campaigns for local businesses. Set up and optimized paid ads on Facebook and Instagram, contributing to significant growth in follower counts.</p>
             </div>
-          </div>
-          <div class="exp-row fade-in" id="exp3">
-            <div class="exp-row__left">
-              <span class="exp-row__period">2023 — Present</span>
-              <span class="exp-row__co">Personal Projects</span>
+          </li>
+          <li class="tl reveal">
+            <div class="tl__meta">
+              <span class="tl__period">2023 — Present</span>
+              <span class="tl__co">Personal Projects</span>
             </div>
-            <div class="exp-row__right">
-              <h3 class="exp-row__role">Software Developer</h3>
-              <p class="exp-row__desc">Developed various software projects including a C++ Chess engine, a Moroccan Checkers AI in Python, and full-stack web platforms.</p>
+            <div class="tl__main">
+              <h3 class="tl__role">Software Developer</h3>
+              <p class="tl__desc">Developed software projects including a C++ chess engine, a Moroccan checkers AI in Python, and full-stack web platforms.</p>
             </div>
-          </div>
-        </div>
+          </li>
+          <li class="tl reveal">
+            <div class="tl__meta">
+              <span class="tl__period">2022 — Present</span>
+              <span class="tl__co">ESISA · Fès, Morocco</span>
+            </div>
+            <div class="tl__main">
+              <h3 class="tl__role">Engineering Degree, Computer Science</h3>
+              <p class="tl__desc">École Supérieure d'Ingénierie en Sciences Appliquées. Software engineering, advanced algorithms and systems architecture.</p>
+            </div>
+          </li>
+        </ol>
+
       </div>
     </section>
 
     <!-- ══ CONTACT ══ -->
     <section class="contact" id="contact">
-      <div class="section-wrap contact__inner">
+      <div class="wrap">
 
-        <div class="contact__left fade-in">
-          <div class="section-kicker"><span class="kicker-line"></span>Get in Touch</div>
-          <h2 class="section-h2">Have a project<br>in mind?<br><em>Let's talk.</em></h2>
-          <div class="contact-links">
-            <a href="mailto:iliaselguennounits@gmail.com" class="contact-link" id="cEmail">iliaselguennounits@gmail.com</a>
-            <a href="tel:0670862178" class="contact-link" id="cPhone">Phone: 0670862178</a>
-            <a href="#" class="contact-link" id="cLi">linkedin.com/in/elguennouni</a>
+        <div class="kicker kicker--light reveal"><span>05</span>Get in touch</div>
+        <h2 class="contact__title reveal">Have a project in mind? <em>Let's talk.</em></h2>
+
+        <div class="contact__grid">
+
+          <div class="contact__left reveal">
+            <a href="mailto:iliaselguennounits@gmail.com" class="contact__mail" id="cEmail">iliaselguennounits@gmail.com</a>
+            <button class="contact__copy" type="button" id="copyEmail">Copy address</button>
+
+            <ul class="contact__list">
+              <li><span>Phone</span><a href="tel:+212670862178" id="cPhone">+212 670 862 178</a></li>
+              <li><span>LinkedIn</span><a href="https://linkedin.com/in/elguennouni" target="_blank" rel="noopener" id="cLi">linkedin.com/in/elguennouni ↗</a></li>
+              <li><span>GitHub</span><a href="https://github.com/ilias-elg" target="_blank" rel="noopener">github.com/ilias-elg ↗</a></li>
+              <li><span>Based in</span><em>Fès, Morocco · <time id="localTime">--:--</time> local</em></li>
+            </ul>
           </div>
+
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="userName">Full name</label>
+                <input type="text" id="userName" name="name" placeholder="Jane Smith" required autocomplete="name">
+              </div>
+              <div class="form-field">
+                <label for="subjectType">Subject</label>
+                <select id="subjectType" name="subject">
+                  <option value="New project">New project</option>
+                  <option value="Freelance work">Freelance work</option>
+                  <option value="General question">General question</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="userMessage">Message</label>
+              <textarea id="userMessage" name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
+            </div>
+            <div class="form-foot">
+              <button type="submit" class="btn btn--light" id="submitBtn">
+                <span class="btn__txt">Send message</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6l6 6-6 6"/></svg>
+              </button>
+              <p class="form-note" id="formNote" role="status">Opens a ready-to-send draft in your email app.</p>
+            </div>
+          </form>
+
         </div>
-
-        <form class="contact-form" id="contactForm" novalidate>
-          <div class="form-row">
-            <div class="form-field">
-              <label for="userName">Full Name</label>
-              <input type="text" id="userName" name="name" placeholder="Jane Smith" required autocomplete="name">
-            </div>
-            <div class="form-field">
-              <label for="userEmail">Email</label>
-              <input type="email" id="userEmail" name="email" placeholder="jane@example.com" required autocomplete="email">
-            </div>
-          </div>
-          <div class="form-field">
-            <label for="subjectType">Subject</label>
-            <select id="subjectType" name="subject">
-              <option value="project">New Project</option>
-              <option value="freelance">Freelance Work</option>
-              <option value="general">General Questions</option>
-            </select>
-          </div>
-          <div class="form-field">
-            <label for="userMessage">Message</label>
-            <textarea id="userMessage" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
-          </div>
-          <button type="submit" class="btn-dark btn-full" id="submitBtn">
-            <span class="btn__txt">Send Message</span>
-          </button>
-        </form>
-
       </div>
+
+      <!-- ══ FOOTER ══ -->
+      <footer class="footer">
+        <div class="footer__mark" aria-hidden="true">Ilias Elguennouni</div>
+        <div class="wrap footer__inner">
+          <span class="footer__copy">© <span id="year">2026</span> Ilias Elguennouni. All rights reserved.</span>
+          <a href="#hero" class="footer__up" id="footerUp">Back to top ↑</a>
+        </div>
+      </footer>
     </section>
-    
-    </div> <!-- End content-wrapper -->
 
   </main>
 
   <!-- ══ PROJECT MODAL ══ -->
-  <div class="project-modal" id="projectModal">
-    <div class="project-modal__overlay" id="modalOverlay"></div>
-    <div class="project-modal__content fade-in">
-      <button class="project-modal__close" id="modalClose">✕</button>
-      <div class="project-modal__body">
-        <img src="" alt="Project Image" class="project-modal__img" id="modalImg">
-        <div class="project-modal__info">
-          <span class="project-modal__category" id="modalCat"></span>
-          <h3 class="project-modal__title" id="modalTitle"></h3>
-          <p class="project-modal__desc" id="modalDesc"></p>
-          <div class="project-modal__tech" id="modalTech"></div>
-        </div>
+  <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal__overlay" id="modalOverlay"></div>
+    <div class="modal__panel">
+      <button class="modal__close" id="modalClose" type="button" aria-label="Close">✕</button>
+      <div class="modal__media">
+        <img src="" alt="" id="modalImg">
+      </div>
+      <div class="modal__info">
+        <span class="modal__cat" id="modalCat"></span>
+        <h3 class="modal__title" id="modalTitle"></h3>
+        <p class="modal__desc" id="modalDesc"></p>
+        <h4 class="modal__label">Highlights</h4>
+        <ul class="modal__feats" id="modalFeats"></ul>
+        <h4 class="modal__label">Built with</h4>
+        <ul class="modal__tech" id="modalTech"></ul>
       </div>
     </div>
   </div>
 
-  <!-- ══ FOOTER ══ -->
-  <footer class="footer">
-    <div class="footer__inner">
-      <span class="footer__logo">IE<span>.</span></span>
-      <span class="footer__copy">© 2026 Ilias Elguennouni. All rights reserved.</span>
-      <a href="#hero" class="footer__up" id="footerUp">↑ Top</a>
-    </div>
-  </footer>
+  <div class="cursor" id="cursor" aria-hidden="true"><span>View</span></div>
 
   <script src="assets/js/app.js"></script>
 </body>

@@ -44,6 +44,31 @@ document.addEventListener('DOMContentLoaded', () => {
     words.forEach((w, i) => w.classList.toggle('on', i < count));
   };
 
+  // Hero text drifts up and fades as the page scrolls away from it
+  const heroLeft = document.querySelector('.hero__left');
+  const updateHero = (y) => {
+    if (!heroLeft || reduceMotion) return;
+    const p = Math.min(1, y / (window.innerHeight * 0.8));
+    heroLeft.style.opacity = 1 - p;
+    heroLeft.style.translate = `0 ${-y * 0.12}px`;
+  };
+
+  // Project stack: a card sinks back and dims as the next one slides over it
+  const stackCards = [...document.querySelectorAll('.pj')];
+  const stackMq    = window.matchMedia('(min-width: 861px)');
+  const updateStack = () => {
+    stackCards.forEach((card, i) => {
+      const next = stackCards[i + 1];
+      let p = 0;
+      if (next && stackMq.matches && !reduceMotion) {
+        const gap = next.getBoundingClientRect().top - card.getBoundingClientRect().top;
+        p = Math.min(1, Math.max(0, 1 - gap / card.offsetHeight));
+      }
+      card.style.scale  = p ? 1 - p * 0.05 : '';
+      card.style.filter = p ? `brightness(${1 - p * 0.45})` : '';
+    });
+  };
+
   let ticking = false;
   const onScroll = () => {
     if (ticking) return;
@@ -59,11 +84,31 @@ document.addEventListener('DOMContentLoaded', () => {
       if (progress) progress.style.transform = `scaleX(${max > 0 ? y / max : 0})`;
 
       updateStatement();
+      updateHero(y);
+      updateStack();
       ticking = false;
     });
   };
   window.addEventListener('scroll', onScroll, { passive: true });
   window.addEventListener('resize', onScroll, { passive: true });
+
+  /* ── 1b. HERO GREETING — cycles through the languages I speak ─ */
+  const heroWord = document.getElementById('heroWord');
+  if (heroWord && !reduceMotion) {
+    const greetings = ['Hello', 'Bonjour', 'Salam'];
+    let g = 0;
+    setInterval(() => {
+      if (document.hidden) return;
+      heroWord.classList.add('out');
+      setTimeout(() => {
+        g = (g + 1) % greetings.length;
+        heroWord.textContent = greetings[g];
+        heroWord.classList.replace('out', 'pre');
+        heroWord.offsetWidth;            // commit the start position before animating in
+        heroWord.classList.remove('pre');
+      }, 520);
+    }, 3400);
+  }
 
   /* ── 2. MOBILE MENU ─────────────────────────────────────────── */
   const burger = document.getElementById('navBurger');

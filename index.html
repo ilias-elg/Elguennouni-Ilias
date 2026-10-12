@@ -12,6 +12,8 @@
   <meta property="og:description" content="C++ and Python game AI, full-stack web platforms, and online communities of 20,000+ members.">
   <meta property="og:image" content="assets/img/avatar.png">
 
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23111110'/%3E%3Cpath d='M22 16h8v32h-8z' fill='%23F9F8F6'/%3E%3Ccircle cx='40' cy='44' r='5' fill='%23A9D9BD'/%3E%3C/svg%3E">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
@@ -36,7 +38,6 @@
       </nav>
 
       <div class="nav__cta-wrap">
-        <span class="nav__status"><i></i>Available for projects</span>
         <a href="#contact" class="nav__cta" id="navCta">Contact me</a>
       </div>
 
@@ -79,17 +80,24 @@
 
         <!-- Big greeting -->
         <div class="hero__greeting" style="padding-top: 40px;">
-          <h1 class="hero__title">Hello</h1>
+          <h1 class="hero__title" aria-label="Hello"><span class="hero__word" id="heroWord" aria-hidden="true">Hello</span></h1>
           <p class="hero__tagline">
             — It's <strong>Ilias Elguennouni,</strong> a 21-year-old software developer and community builder.
           </p>
+          <div class="hero__btns">
+            <a href="#work" class="btn btn--solid">
+              See my work
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m0 0l-6-6m6 6l6-6"/></svg>
+            </a>
+            <a href="#contact" class="btn btn--line">Get in touch</a>
+          </div>
         </div>
 
         <!-- Scroll hint -->
-        <div class="hero__scroll">
+        <a href="#about" class="hero__scroll">
           <div class="hero__scroll-line"></div>
           <span>Scroll down ↓</span>
-        </div>
+        </a>
 
       </div>
 
@@ -103,8 +111,8 @@
         >
         <!-- Social links floating right edge -->
         <div class="hero__socials">
-          <a href="#" class="hero__social" id="hsDribble" aria-label="Dribbble">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg>
+          <a href="mailto:iliaselguennounits@gmail.com" class="hero__social" id="hsEmail" aria-label="Email">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M3 7l9 6.5L21 7"/></svg>
           </a>
           <a href="https://linkedin.com/in/elguennouni" target="_blank" rel="noopener" class="hero__social" id="hsLinkedin" aria-label="LinkedIn">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
